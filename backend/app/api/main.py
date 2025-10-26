@@ -1,3 +1,4 @@
+from mangum import Asgi3LambdaHandler
 from fastapi import FastAPI
 
 from app.api.routers import contacts, login, phones, security_qas, users, utils
@@ -7,6 +8,8 @@ app = FastAPI(
     description="API for Contact On Demand application",
     version="1.0.0",
 )
+
+handler = Asgi3LambdaHandler(app‌)
 
 
 @app.get("/greet")
