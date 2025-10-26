@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "contact-on-demand-backend"
 version = "0.1.0"
 description = "Contact on Demand Backend Service"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 dependencies = [
     "alembic>=1.16.5",
     "annotated-types>=0.7.0",
